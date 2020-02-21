@@ -1,9 +1,9 @@
 # code your #position_taken? method here!
 def position_taken? (board, position, char=" ")
   board[position] = char
-  if (char == " ") && (board[position] == nil)
+  if (char == " ") && (char == nil)
     return false
-  if (char == "X") || (board[position] == "O")
+  if (char == "X") || (char == "O")
     return true
   end
 end
