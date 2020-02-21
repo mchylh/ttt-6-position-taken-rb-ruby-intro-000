@@ -1,9 +1,8 @@
 # code your #position_taken? method here!
-def move(board, position, char=" ")
-  board[position] = char
-  if (char == " ") && (char == nil)
+def move(board, index)
+  if (board[index] == " ") && (board[index] == nil)
     return false
-  else (char == "X") || (char == "O")
+  else (board[index] == "X") || (board[index] == "O")
     return true
   end
 end
